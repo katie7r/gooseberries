@@ -14,6 +14,7 @@ gem "jquery-rails"
 gem "neat", "~> 1.7.0"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "normalize-rails", "~> 3.0.0"
+gem "paperclip"
 gem "pg"
 gem "puma"
 gem "rack-canonical-host"
@@ -21,6 +22,7 @@ gem "rails", "~> 4.2.0"
 gem "recipient_interceptor"
 gem "sass-rails", "~> 5.0"
 gem "simple_form"
+gem "slim-rails"
 gem "title"
 gem "uglifier"
 
@@ -33,6 +35,7 @@ group :development do
 end
 
 group :development, :test do
+  gem "annotate"
   gem "awesome_print"
   gem "bundler-audit", require: false
   gem "byebug"

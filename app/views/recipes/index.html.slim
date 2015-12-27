@@ -1,0 +1,15 @@
+p#notice = notice
+
+h1 Listing Recipes
+
+
+- @recipes.each_with_index do |recipe, i|
+  .flex-boxes
+    = link_to recipe, class: "flex-box flex-box-big flex-#{i % 4 + 1}" do
+      h1.flex-title = recipe.name
+      - if recipe.content
+        p = recipe.content
+      - if recipe.photo
+        img[src="#{recipe.photo}" alt="Recipe image"]
+
+= link_to 'New Recipe', new_recipe_path

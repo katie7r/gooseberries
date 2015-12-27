@@ -1,2 +1,5 @@
-FactoryGirl.define do
+FactoryGirl.define do  factory :recipe do
+    
+  end
+
 end

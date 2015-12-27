@@ -21,9 +21,77 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 
+// Colorhunt/Palettes
+//----------------
+$neon-carrot: #FF9234;
+$sunglow: #FFCD3C;
+$shalimar: #FAFCB4;
+$feijoa: #B0DB72;
+
+$bittersweet: #F06868;
+$mac-and-cheese: #FAB57A;
+$jonquil: #EDF798;
+$light-sky-blue: #80D6FF;
+
+$hot-purple: #552E5A;
+$sea-pink: #CF7979;
+$vis-vis: #F6E198;
+$australian-mint: #ECFFA3;
+
+$observatory: #068B78;
+$moss-green: #9ED79A;
+$tidal: #F2FF97;
+$dandelion: #FFCF5E;
+
+$atlantis: #96CD39;
+$laser-lemon: #F5FF65;
+$koromiko: #FFBA47;
+$tomato: #FF5B44;
+//----------------
+$color-palettes: (
+  'carrot': (
+    'primary':    $neon-carrot,
+    'secondary':  $sunglow,
+    'tertiary':   $shalimar,
+    'quaternary': $feijoa
+  ),
+  'wildflower': (
+    'primary':    $bittersweet,
+    'secondary':  $mac-and-cheese,
+    'tertiary':   $jonquil,
+    'quaternary': $light-sky-blue
+  ),
+  'phoenicia': (
+    'primary':    $hot-purple,
+    'secondary':  $sea-pink,
+    'tertiary':   $vis-vis,
+    'quaternary': $australian-mint
+  ),
+  'seascape': (
+    'primary':    $observatory,
+    'secondary':  $moss-green,
+    'tertiary':   $tidal,
+    'quaternary': $dandelion
+  ),
+  'garden': (
+    'primary':    $atlantis,
+    'secondary':  $laser-lemon,
+    'tertiary':   $koromiko,
+    'quaternary': $tomato
+  )
+);
+//----------------
+$palette:    map-get($color-palettes, 'garden');
+//----------------
+$primary:    map-get($palette, 'primary');
+$secondary:  map-get($palette, 'secondary');
+$tertiary:   map-get($palette, 'tertiary');
+$quaternary: map-get($palette, 'quaternary');
+//----------------
+
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $primary;
 
 // Border
 $base-border-color: $light-gray;
